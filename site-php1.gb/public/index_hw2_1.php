@@ -3,20 +3,23 @@
 <DOCTYPE HTML>
 <html>
 <head>
-<title>Задание 1 на php</title>
+<title>Урок 3. Задание 1 на php</title>
  <body>
  <?php
- 
- $a = 5;
- $b = 3;
- 
- if($a >= 0 && $b >= 0)
-     echo $a - $b;
- elseif ($a < 0 && $b < 0)
-     echo $a * $b;
- elseif (($a < 0 && $b >= 0) || ($a >= 0 && $b < 0))
-     echo $a + $b;
- 
+ $i = 0;
+ while($i <= 100) {
+     echo $i . PHP_EOL;
+     $i+=3;
+ }
+
+ /*второй вариант
+ $counter = 0;
+
+ while ( $counter++ <= 100) {
+     if($counter % 3==0)
+         echo "$counter <br>";
+ }
+*/
  ?>
 ?>
 </body>
